@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -9,12 +11,11 @@
 
 int main(void)
 {
-	int digit = 0;
+int i;
 
-	while (digit <= 9)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(digit + 0);
-		digit++;
+		putchar(i + '0');
 	}
 
 	putchar('\n');
