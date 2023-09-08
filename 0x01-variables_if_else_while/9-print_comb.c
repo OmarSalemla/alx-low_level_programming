@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,22 +8,22 @@
  * Return: Always 0 (success)
 */
 
+#include <stdio.h>
+
 int main(void)
 {
-	int digit = 0;
+	int i, j;
 
-	while (digit <= 9)
+for (i = 0; i <= 9; i++)
+{
+	for (j = 0; j <= 9; j++)
 	{
-		putchar(digit + '48');
-
-		if (digit != 9)
-		{
-			putchar(',');
-			putchar(' ');
+		putchar(i + '0');
+		putchar(',');
+		putchar(' ');
 		}
-		digit++;
 	}
 
-	putchar('\n');
 	return (0);
 }
+
