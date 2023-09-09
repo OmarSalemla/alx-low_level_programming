@@ -10,20 +10,20 @@
 
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	while (digit <= 9)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(digit + '48');
-
-		if (digit != 9)
+		if (i != 9)
 	{
+		putchar(i + '0');
 		putchar(',');
 		putchar(' ');
 	}
-		digit++;
+	else
+	{
+	putchar(i + '0');
 	}
-	putchar('\n');
+	}
 	return (0);
 }
-
