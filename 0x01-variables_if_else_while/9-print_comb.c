@@ -8,26 +8,25 @@
  * Return: Always 0 (success)
 */
 
-#include <stdio.h>
-
 int main(void)
 {
 	int i;
 
 	for (i = 0; i <= 9; i++)
-
 	{
 
-		{
+	if (i != 9)
+	{
+	putchar(i + '0');
+	putchar(',');
+	putchar(' ');
+	}
+	else
+	{
 		putchar(i + '0');
-		putchar(',');
-		putchar(' ');
+		putchar('\n');
 	}
 	}
-	if (i == 9)
-{
-	putchar('\n');
-	}
+
 	return (0);
 }
-
