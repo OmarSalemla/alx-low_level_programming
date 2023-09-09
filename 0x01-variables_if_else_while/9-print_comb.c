@@ -20,10 +20,6 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	else
-	{
-	putchar(i + '0');
-	}
 	}
 	return (0);
 }
