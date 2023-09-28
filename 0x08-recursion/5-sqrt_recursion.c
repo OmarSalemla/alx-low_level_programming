@@ -3,33 +3,30 @@
 
 /**
  * _sqrt_recursion - find natural square root.
- * @x: int.
- * @prev: square root.
+ * @n: int.
+ * @val: square root.
  * Return: int.
  */
 
-#include <math.h>
-
-double _sqrt_recursion(double x, double prev)
+int square(int n, int val);
+int _sqrt_recursion(int n)
 {
-	if (fabs(x - prev) < FLT_EPSILON * x)
-	{
-		return (x);
-	}
-	else
-	{
-		return (_sqrt_recursion(0.5 * (x + prev), x));
-	}
+	return (square(n, 1));
 }
 
-int _sqrt_recursion(int x)
+/**
+ * square - find square root.
+ * @n: int to find square root.
+ * @val: square root.
+ * Return: int.
+ */
+
+int square(int n, int val)
 {
-	if (x < 2)
-	{
-		return (x);
-	}
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return (square(n, val + 1));
 	else
-	{
-		return (_sqrt_recursion(x, x));
-	}
+		return (-1);
 }
