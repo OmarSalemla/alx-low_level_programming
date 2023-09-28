@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - prints a string, followed by a new line.
- * @c: pointer to the string.
+ * @s: pointer to the string.
  * Return: void
  */
 
