@@ -3,7 +3,7 @@
 
 /* function prototypes */
 int _putchar(char c);
-void my_function(int arg1, char arg2);
+void my_function(int argc, char *argv[]);
 
 #endif 
 /* MAIN_H */
