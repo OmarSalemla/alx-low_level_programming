@@ -1,9 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* function prototypes */
 int _putchar(char c);
-void my_function(int argc, char *argv[]);
+int _atoi(char *s);
 
-#endif 
-/* MAIN_H */
+#endif
